@@ -14,24 +14,26 @@ export default function BetHeader({ title, className, ...props }: Props) {
         {title}
       </BetCell>
 
-      <BetCell w="w-24">Yorumlar</BetCell>
+      <BetCell w="w-24" className="hidden 2xl:block">
+        Yorumlar
+      </BetCell>
 
-      <BetCell></BetCell>
+      <BetCell className="hidden 2xl:block"></BetCell>
       <BetCell>1</BetCell>
       <BetCell>x</BetCell>
-      <BetCell>2</BetCell>
+      <BetCell className="hidden 2xl:block">2</BetCell>
       <BetCell>Alt</BetCell>
       <BetCell>Üst</BetCell>
-      <BetCell>H1</BetCell>
-      <BetCell>1</BetCell>
-      <BetCell>x</BetCell>
-      <BetCell>2</BetCell>
-      <BetCell>H2</BetCell>
+      <BetCell className="hidden 2xl:block">H1</BetCell>
+      <BetCell className="hidden 2xl:block">1</BetCell>
+      <BetCell className="hidden 2xl:block">x</BetCell>
+      <BetCell className="hidden 2xl:block">2</BetCell>
+      <BetCell className="hidden 2xl:block">H2</BetCell>
       <BetCell>1-X</BetCell>
       <BetCell>1-2</BetCell>
       <BetCell>X-2</BetCell>
-      <BetCell>Var</BetCell>
-      <BetCell>Yok</BetCell>
+      <BetCell className="hidden 2xl:block">Var</BetCell>
+      <BetCell className="hidden 2xl:block">Yok</BetCell>
       <BetCell>+99</BetCell>
     </div>
   );

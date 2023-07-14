@@ -19,25 +19,27 @@ export default function BetWidget({ bet, className, ...props }: Props) {
           {bet.C} {bet.T} {bet.N}
         </BetCell>
 
-        <BetCell w="w-24">Yorumlar</BetCell>
+        <BetCell className="hidden 2xl:block" w="w-24">
+          Yorumlar
+        </BetCell>
 
-        <BetCell>{bet.OCG["1"].MBS}</BetCell>
+        <BetCell className="hidden 2xl:block">{bet.OCG["1"].MBS}</BetCell>
 
         <BetSelectableCell bet={bet} prop="OCG.1.OC.0.O" />
 
         <BetSelectableCell bet={bet} prop="OCG.1.OC.1.O" />
 
-        <BetCell> </BetCell>
+        <BetCell className="hidden 2xl:block"> </BetCell>
 
         <BetSelectableCell bet={bet} prop="OCG.5.OC.25.O" />
 
         <BetSelectableCell bet={bet} prop="OCG.5.OC.26.O" />
 
-        <BetCell> </BetCell>
-        <BetCell> </BetCell>
-        <BetCell> </BetCell>
-        <BetCell> </BetCell>
-        <BetCell> </BetCell>
+        <BetCell className="hidden 2xl:block"> </BetCell>
+        <BetCell className="hidden 2xl:block"> </BetCell>
+        <BetCell className="hidden 2xl:block"> </BetCell>
+        <BetCell className="hidden 2xl:block"> </BetCell>
+        <BetCell className="hidden 2xl:block"> </BetCell>
 
         <BetSelectableCell bet={bet} prop="OCG.2.OC.3.O" />
 
@@ -45,8 +47,8 @@ export default function BetWidget({ bet, className, ...props }: Props) {
 
         <BetSelectableCell bet={bet} prop="OCG.2.OC.5.O" />
 
-        <BetCell> </BetCell>
-        <BetCell> </BetCell>
+        <BetCell className="hidden 2xl:block"> </BetCell>
+        <BetCell className="hidden 2xl:block"> </BetCell>
 
         <BetSelectableCell bet={bet} prop="OCG.2.OC.3.ID" />
       </div>
