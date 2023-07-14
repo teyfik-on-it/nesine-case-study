@@ -1,12 +1,12 @@
 .basket {
-  @apply fixed bottom-10 right-10 z-10 bg-white shadow-md py-2 px-4 w-full max-w-lg border transition-all cursor-default;
+  @apply fixed bottom-10 right-10 z-10 bg-white shadow-md py-2 px-4 w-full max-w-sm border transition-all cursor-default text-sm;
 
   &.hide {
-    @apply translate-y-full bottom-12;
+    @apply translate-y-full bottom-10;
   }
 
   &.show {
-    @apply bottom-10;
+    @apply bottom-4;
   }
 }
 
@@ -15,7 +15,7 @@
 }
 
 .title {
-  @apply text-2xl cursor-pointer;
+  @apply text-lg font-bold;
 }
 
 .action {
@@ -27,11 +27,11 @@
 }
 
 .list {
-  @apply max-h-96 overflow-y-auto;
+  @apply max-h-52 overflow-y-auto;
 }
 
 .item {
-  @apply flex gap-2 truncate border-t first:border-t-0 leading-8;
+  @apply flex gap-2 truncate border-t first:border-t-0 leading-8 text-xs;
 }
 
 .odds {

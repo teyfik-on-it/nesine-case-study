@@ -20,7 +20,7 @@ export default function BetCell({
       {...props}
       className={clsx(
         w || "w-20",
-        "truncate py-2 px-4 border-l border-gray-300 first:border-l-0",
+        "truncate py-1 px-2 border-l border-gray-300 first:border-l-0 text-sm",
         center && "text-center",
         onClick && "select-none cursor-pointer",
         selected ? "bg-green-300" : onClick && "hover:bg-gray-100",

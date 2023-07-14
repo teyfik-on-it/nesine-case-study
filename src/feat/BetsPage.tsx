@@ -56,7 +56,7 @@ export default function BetsPage() {
                             width={width}
                             height={height}
                             itemCount={items.length}
-                            itemSize={82}
+                            itemSize={59}
                           >
                             {({ index, style }) => (
                               <BetWidget bet={items[index]} style={style} />
