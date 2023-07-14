@@ -48,14 +48,14 @@ export default function ErrorBoundary({
           className={clsx("p-4 bg-red-200 rounded-md text-red-700", className)}
         >
           <header>
-            <h3 className="text-2xl">Hata</h3>
+            <h3 className="text-lg">Hata</h3>
           </header>
 
-          <main className="mt-2 max-h-32 overflow-y-auto">
-            <p>{message}</p>
+          <main className="mt-1 max-h-32 overflow-y-auto">
+            <p className="text-sm">{message}</p>
           </main>
 
-          <footer className="mt-4 flex justify-end">
+          <footer className="mt-2 flex justify-end">
             {onRefresh && (
               <button
                 onClick={onRefresh}
