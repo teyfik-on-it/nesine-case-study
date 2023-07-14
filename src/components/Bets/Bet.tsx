@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { HTMLAttributes } from "react";
 import { Nesine } from "../../types/Nesine";
-import { useBasket } from "../../utils/BasketProvider";
 import BetCell from "./BetCell";
 import BetHeader from "./BetHeader";
 import BetSelectableCell from "./BetSelectableCell";
@@ -11,8 +10,6 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
 }
 
 export default function BetWidget({ bet, className, ...props }: Props) {
-  const { select } = useBasket();
-
   return (
     <div {...props} className={clsx("border-b border-gray-600", className)}>
       <BetHeader title={`${bet.D} ${bet.DAY} ${bet.LN}`} />
