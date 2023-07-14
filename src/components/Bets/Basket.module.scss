@@ -1,5 +1,5 @@
 .basket {
-  @apply fixed bottom-10 right-10 z-10 bg-white shadow-md py-2 px-4 w-full max-w-sm border transition-all cursor-default text-sm;
+  @apply fixed right-4 xl:right-8 z-10 bg-white shadow-md py-2 px-4 w-full max-w-sm border transition-all cursor-default text-sm;
 
   &.hide {
     @apply translate-y-full bottom-10;
