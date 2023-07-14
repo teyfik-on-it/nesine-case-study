@@ -1,0 +1,43 @@
+.basket {
+  @apply fixed bottom-10 right-10 z-10 bg-white shadow-md py-2 px-4 w-full max-w-lg border transition-all cursor-default;
+
+  &.hide {
+    @apply translate-y-full bottom-12;
+  }
+
+  &.show {
+    @apply bottom-10;
+  }
+}
+
+.header {
+  @apply flex justify-between items-center;
+}
+
+.title {
+  @apply text-2xl cursor-pointer;
+}
+
+.action {
+  @apply italic text-gray-600 py-1 px-2 hover:underline cursor-pointer;
+}
+
+.divider {
+  @apply border-t my-2 border-gray-300;
+}
+
+.list {
+  @apply max-h-96 overflow-y-auto;
+}
+
+.item {
+  @apply flex gap-2 truncate border-t first:border-t-0 leading-8;
+}
+
+.odds {
+  @apply font-bold;
+}
+
+.totalLabel {
+  @apply font-bold;
+}
