@@ -31,7 +31,11 @@
 }
 
 .item {
-  @apply flex gap-2 truncate border-t first:border-t-0 leading-8 text-xs;
+  @apply flex items-center gap-2 truncate border-t first:border-t-0 leading-8 text-xs;
+}
+
+.removeItem {
+  @apply text-red-600 hover:bg-red-400 hover:text-white rounded-md transition-colors leading-none text-center py-1 px-2;
 }
 
 .odds {

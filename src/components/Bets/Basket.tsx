@@ -6,7 +6,7 @@ import { useBasket } from "../../utils/BasketProvider";
 import styles from "./Basket.module.scss";
 
 export default function Basket() {
-  const { items } = useBasket();
+  const { items, select } = useBasket();
   const total = useMemo(
     () => (
       <NumericFormat
@@ -53,6 +53,13 @@ export default function Basket() {
               <span>Kod: {bet.C}</span>
               <span>Maç: {bet.N}</span>
               <span className={styles.odds}>Oran: {get(bet, prop)}</span>
+
+              <button
+                onClick={() => select(bet, prop)}
+                className={styles.removeItem}
+              >
+                Sil
+              </button>
             </li>
           ))}
         </main>
